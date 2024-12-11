@@ -1,0 +1,253 @@
+/* Global Styles */
+body {
+    background-color: #ffffff; /* White background */
+    color: #333;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Full height container */
+.container-fluid {
+    padding: 0;
+    height: 100vh; /* Take full viewport height */
+}
+
+.no-response {
+    display: block; /* default is visible */
+}
+
+.no-response.d-none {
+    display: none; /* hides the section */
+}
+/* Chat Container */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 20px;
+}
+
+/* Chatbox */
+.chat-box {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    height: 100vh; /* Adjust height to leave space for input */
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+/* User and Bot Messages */
+.message-container {
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    font-size: 1rem;
+}
+
+
+
+
+/* No response section */
+#no-response {
+    display: block; /* Make visible by default */
+    text-align: center;
+    margin-top: 30px;
+}
+
+.brain-image {
+    max-width: 120px;
+    margin-bottom: 20px;
+}
+
+#no-response .row {
+    display: flex;
+    justify-content: center;
+}
+
+#no-response .col-md-3 {
+    text-align: center;
+    margin: 10px;
+}
+
+#no-response h5 {
+    color: #060229;
+    font-size: 1.1rem;
+    margin-top: 10px;
+}
+
+#no-response p {
+    font-size: 0.9rem;
+    color: #555;
+}
+/* Bot Messages */
+.bot-message {
+    background-color: #060229;
+    color: white;
+    text-align: right;
+    margin-left: auto;
+}
+
+/* User Messages */
+.user-message {
+    background-color: #e0e0e0;
+    color: #333;
+    text-align: left;
+}
+
+
+
+
+/* Input Field */
+.chat-input {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    color: #333;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    outline: none;
+}
+
+/* Button */
+button#send-btn {
+    background-color: #060229;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button#send-btn:hover {
+    background-color: #060229;
+    cursor: pointer;
+}
+
+
+
+
+.img-fluid{
+    font-size: 40px;
+}
+/* Restaurant Card Container */
+.restaurant-card-container {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/* Restaurant Cards */
+.restaurant-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Card Image */
+.card-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px 0 0 8px;  /* Rounded top-left corners */
+}
+
+/* Card Body */
+.card-body {
+    padding: 12px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #060229;
+    margin-bottom: 8px;
+}
+
+.card-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Visit Button */
+.btn-visit {
+    background-color: #060229;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 6px;
+    padding: 6px 12px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.btn-visit:hover {
+    background-color: #060229;
+    transform: translateY(-2px);
+}
+
+/* Grid Layout for Cards */
+.restaurant-card-container {
+    margin-bottom: 15px;
+}
+
+.row.g-0 {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+/* Button Hover Effect */
+.btn-light:hover {
+    background-color: #f1f1f1;
+    color: #333;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+
+/* Typing Indicator Styles */
+.typing-indicator p {
+    font-style: italic;
+    color: #999;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .chat-box {
+        max-height: 250px;
+    }
+
+    .brain-image {
+        max-width: 90px;
+    }
+    .restaurant-card {
+        max-width: 100%;
+    }
+
+    .col-4, .col-8 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
