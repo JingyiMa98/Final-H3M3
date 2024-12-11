@@ -3,6 +3,8 @@ Nexus - Chatbot with Restaurant Recommendation
 Project Overview
 Nexus is a Flask-based web application that integrates OpenAI and Yelp APIs to provide intelligent chatbot services and personalized restaurant recommendations. Users can input their preferences through the chatbot page, and the app will extract keywords and suggest nearby restaurants.
 
+Youtube Link: https://youtu.be/ksyDS4uGRNU
+
 Key Features
 Home Page:
 Displays an introduction to the application.
